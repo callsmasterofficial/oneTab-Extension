@@ -1,0 +1,142 @@
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+hr.style-four {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+.container{
+    margin-left: 3rem;
+}
+
+.container{
+    border-radius: 10px;
+    padding: 0 1rem 0.8rem;
+    margin-bottom: 20px;
+    transform: translate(5px, 5px);
+    transition: 0.3s;
+    
+}
+
+.container:hover{
+  box-shadow: 2px 2px 5px white;
+  transform: translate(-5px, -5px);
+  transition: 0.3s;
+}
+
+
+ input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #FF3200;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.logo{
+    width: 185px;
+    height: 42px;
+    margin-left: 1.5rem;
+}
+
+
+
+.optionHeader{
+    display: flex;
+    margin: 10px ;
+    align-items: center;
+}
+
+.optionHeader h1{
+    margin-left:1rem;
+}
+
+.backBtn{
+    padding: 10px;
+    margin-left: 20rem;
+    font-weight: 600;
+    background-color: #FF3200;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+}
+
+.backBtn:hover{
+    background-color: darkred;
+}
+
+.options ul{
+    /* padding: 10px; */
+    list-style: none;
+    margin: 0;
+}
+
+h3{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+
+ul li{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 15px;
+}
+
+ul li h4{
+    margin: 0;
+    margin-left: 10px;
+    /* margin-bottom: 1.2rem; */
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+li+p{
+    margin-left: 20px;
+    font-size: 1rem;
+    color: grey;
+}
+
+ul p{
+    color: grey;
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 2.5rem;
+    width: 45rem;
+    overflow: hidden;
+}
+
+p{
+    color: grey;
+    font-size: 1rem;
+    /* margin-top: 3rem; */
+}

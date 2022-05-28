@@ -1,0 +1,36 @@
+{
+  "name": "OneTab",
+  "version": "1.0.0",
+  "description": "this is going to be the description....",
+  "manifest_version": 3,
+  "default_locale":"en",
+  "action":{
+      "default_icon": "img/128.png"
+  },
+  "icons": {
+    "16": "img/16.png",
+    "32": "img/32.png",
+    "48": "img/48.png",  
+    "128": "img/128.png"
+
+
+  },
+
+  "permissions": [
+      "activeTab", 
+      "tabs",
+      "storage",
+      "unlimitedStorage",
+      "contextMenus"
+  ],
+  "commands": {
+      "_execute_action": {
+        "suggested_key": {
+          "default": "Alt+Shift+O"
+        }
+      }
+  },
+  "background": {
+      "service_worker": "background.js"
+  }
+}
