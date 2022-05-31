@@ -1,14 +1,12 @@
-import React, { useState } from "react";
-import PopupShare from "./PopupShare";
-import Backdrop from "./Backdrop";
+import React, { useEffect, useState } from "react";
+import localizeHtmlPage from "../../functions/localizeHtmlPage";
 
 export default function Modal(props) {
-  const [isPopupOpen, setPopUp] = useState(true);
-
-  const toggleSharePage = () => {
-    setPopUp(!isPopupOpen);
-    // console.log(isPopupOpen);
-  };
+  
+  useEffect(() => {
+    localizeHtmlPage();
+  },[])
+  
   const { sectionIndex, setArray, onButtonClick } = props;
   // Name this tab
   const handleName = () => {
