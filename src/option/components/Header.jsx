@@ -77,7 +77,7 @@ export default function Header({ setArray, cardArray, config }) {
       <div className="bringfunbox">
         <ul>
           <li>
-            <button data-locale="merge_tab" className="bring_btn" onClick={bringAllHandler}>Merge Tabs</button>
+            <button data-locale="merge_tab" className="bring_btn" onClick={bringAllHandler}></button>
           </li>
           <li>
             <button data-locale="configure" className="btn" onClick={optionsPageHandler}>Configure</button>
