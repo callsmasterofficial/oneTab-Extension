@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PopupShare from "./PopupShare";
 import Backdrop from "./Backdrop";
+import localizeHtmlPage from "../../functions/localizeHtmlPage";
 
 export default function Modal(props) {
   const [isPopupOpen, setPopUp] = useState(true);
-
+  useEffect(() => {
+    localizeHtmlPage();
+  },[])
   const toggleSharePage = () => {
     setPopUp(!isPopupOpen);
     // console.log(isPopupOpen);
