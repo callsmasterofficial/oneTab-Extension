@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import localizeHtmlPage from "../../functions/localizeHtmlPage";
 
 export default function Modal(props) {

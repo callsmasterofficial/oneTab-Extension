@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import localizeHtmlPage from "../functions/localizeHtmlPage";
@@ -7,7 +7,6 @@ function App() {
   // const [cardArray, setArray] = useState(JSON.parse(localStorage.getItem("data")) || []);
   const [config, setConfig] = useState({});
   const [cardArray, setArray] = useState([]);
-  const mounted = useRef();
   useEffect(() => {
     chrome.storage.local.get(["data"], function (result) {
       // console.log("here we go! " + result.data);
@@ -21,7 +20,6 @@ function App() {
         setConfig(JSON.parse(result.oneTabConfig));
       }
     });
-    localizeHtmlPage();
   }, []);
 
   useEffect(() => {
