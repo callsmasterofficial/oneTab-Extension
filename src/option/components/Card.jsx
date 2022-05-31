@@ -142,23 +142,23 @@ export default function Card({ section, sectionIndex, setArray,  config }) {
         {section.isLocked && <Lock />}
         {section.isStar && <Star />}
 
-        <h3 className="cardTabs">{section.Data.length} tabs</h3>
+        <h3 className="cardTabs">{section.Data.length} <span data-locale="tabs"> tabs </span></h3>
         <div className="cardFunBox">
-          <p>created {section.timeDate}</p>
+          <p> <span data-locale="created">created </span> {section.timeDate}</p>
           <ul >
             <li>
-              <button onClick={restoreAll}>Restore All</button>
+              <button data-locale="restore_all" onClick={restoreAll}>Restore All</button>
             </li>
             <li>
               {!section.isLocked && (
-                <button onClick={deleteAll}>Delete All</button>
+                <button data-locale="delete_all" onClick={deleteAll}>Delete All</button>
               )}
             </li>
             {/* <li>
               <button onClick={handleShare}>Share as web page</button>
             </li> */}
             <li className="posRel">
-              <button onClick={handleMore} className="moreButton">
+              <button data-locale="more" onClick={handleMore} className="moreButton">
                 More...
               </button>
               {isModalOpen && (

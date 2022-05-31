@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Header({ setArray, cardArray, config }) {
+  const excludeUrl=["chrome://newtab/","chrome-extension://",'chrome://extensions/']
   const bringAllHandler = () => {
     // console.log(config);
     chrome.tabs.query({ currentWindow: true}, function (tabs) {
@@ -24,7 +25,7 @@ export default function Header({ setArray, cardArray, config }) {
       console.log(tabs);
 
       tabs.forEach((item) => {
-        if(!item.url.includes("chrome-extension://")){  
+        if(!excludeUrl.some(childUrl=>item.url.includes(childUrl))){  
           const urlObj={ url: item.url, image: item.favIconUrl, id: item.id, title: item.title };
           if((config.pinned==="dontAddPinned" && item.pinned) || (config.duplicate==="rejectDuplicates" && 
               obj.Data.findIndex((childUrlObj)=>childUrlObj.url===item.url)>-1)){
@@ -76,23 +77,23 @@ export default function Header({ setArray, cardArray, config }) {
       <div className="bringfunbox">
         <ul>
           <li>
-            <button className="bring_btn" onClick={bringAllHandler}>Merge Tabs</button>
+            <button data-locale="merge_tab" className="bring_btn" onClick={bringAllHandler}>Merge Tabs</button>
           </li>
           <li>
-            <button className="btn" onClick={optionsPageHandler}>Configure</button>
+            <button data-locale="configure" className="btn" onClick={optionsPageHandler}>Configure</button>
           </li>
           <li>
-            <button className="btn" onClick={aboutHandler}>About </button>
+            <button data-locale="about" className="btn" onClick={aboutHandler}>About </button>
           </li>
           <li>
-            <button className="btn" onClick={feedbackHandler}>Feedback</button>
+            <button data-locale="feedback" className="btn" onClick={feedbackHandler}>Feedback</button>
           </li>
           <li>
-            <button className="btn" onClick={handleHelp}>Help</button>
+            <button data-locale="help" className="btn" onClick={handleHelp}>Help</button>
           </li>
         </ul>
       </div>
-      <h3 className="activeTabs"><span className="totalTabs">Total Tabs :</span> {totalTabs}</h3>
+      <h3 className="activeTabs"><span className="totalTabs" data-locale="total_tabs">Total Tabs :</span> {totalTabs}</h3>
 
     </div>
   );

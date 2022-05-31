@@ -5,35 +5,54 @@
   "description": {
     "message": "Install Netflix Party Chrome extension to watch Netflix in sync with your friends"
   },
-  "startVideoMessage":{
-    "message":"Please start the video first and then click on the extension icon."
+  "merge_tab":{
+    "message":"Merge Tabs"
   },
-  "learnMore":{
-    "message":"Learn More"
+  "configure":{
+    "message":"Configure"
   },
-  "createPartyHeading":{
-    "message":"Create a Netflix Party"
+  "about":{
+    "message":"About"
   },
-  "Only_I_have_control":{
-    "message":"Only I have control"
+  "feedback":{
+    "message":"Feedback"
   },
-  "start_the_party":{
-    "message":"Start the party"
+  "help":{
+    "message":"Help"
   },
-  "start_party_footer":{
-    "message":"Please make sure to tell your guests that they need to click on the extension icon to join a party after clicking on your party invitation link."
+  "total_tabs":{
+    "message":"Total Tabs :"
   },
-  "share_instruction":{
-    "message":"Share the URL below so others can join the party. The recipient(s) should navigate to this URL and then click on the extension icon to join."
+  "no_tabs_found":{
+    "message":"No tabs found."
   },
-  "copy":{
-    "message":"Copy"
+  "tabs":{
+    "message":"Tabs"
   },
-  "show_chats":{
-    "message":"Show Chats"
+  "created":{
+    "message":"created"
   },
-  "disconnect":{
-    "message":"Disconnect"
+  "restore_all":{
+    "message":"Restore All"
+  },
+  "delete_all":{
+    "message":"Delete All"
+  },
+  "more":{
+    "message":"More..."
+  },
+  "share_this_tab":{
+    "message":"ssssssShare this section"
+  },
+  "name_this_tab":{
+    "message":"Name this tab"
+  },
+  "unstar_this_tab":{
+    "message":"Un-star this tab"
+  },
+  "star_this_tab":{
+    "message":"Star this tab"
   }
+  
 }
 
