@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Card from "./components/Card";
+import localizeHtmlPage from "../functions/localizeHtmlPage";
 
 function App() {
   // const [cardArray, setArray] = useState(JSON.parse(localStorage.getItem("data")) || []);
@@ -20,6 +21,7 @@ function App() {
         setConfig(JSON.parse(result.oneTabConfig));
       }
     });
+    localizeHtmlPage();
   }, []);
 
   useEffect(() => {
@@ -27,7 +29,9 @@ function App() {
     chrome.storage.local.set({ data: cardArray }, function () {
       // console.log("Storage is set in chrome storage... " + JSON.stringify(cardArray));
     });
+    localizeHtmlPage();
   }, [cardArray]);
+  
   function cardChange(item, index) {
     return (
       <Card
@@ -47,7 +51,7 @@ function App() {
       {cardArray.length > 0 ? (
         cardArray.map(cardChange)
       ) : (
-        <h1>No tabs found.</h1>
+        <h1 data-locale="no_tabs_found"> No tabs found.</h1>
       )}
     </div>
   );

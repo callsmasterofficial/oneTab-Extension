@@ -7,7 +7,8 @@ module.exports = {
   entry: {
     "option/index": "./src/option/index.js",
     "configPage/index": "./src/configPage/index.js",
-    background: "./src/background.js"
+    background: "./src/background.js",
+    oneTabSite: "./src/oneTabSite.js"
   },
   resolve: {
     extensions: [".jsx", ".js"],
