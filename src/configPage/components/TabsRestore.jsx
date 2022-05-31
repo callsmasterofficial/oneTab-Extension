@@ -13,7 +13,7 @@ export default function tabsRestore({ config, setConfig }) {
   
   return (
     <div className="container">
-        <h3>When a tab group is restored, send the tabs to:</h3>
+        <h3 data-locale="tab_group_restore">When a tab group is restored, send the tabs to:</h3>
         <div className="tabsRestore options">
             <ul>
                
@@ -27,7 +27,7 @@ export default function tabsRestore({ config, setConfig }) {
                         onChange={handleChange}
                         checked= {config.restore === "alwaysNew"}
                     />
-                    <label htmlFor="alwaysNew"><h4>Always a new window</h4></label>
+                    <label htmlFor="alwaysNew"><h4 data-locale="always_new_window">Always a new window</h4></label>
                 </li>
                 <li>
                     {/* <input type="radio" id="alwaysCurrent" name="tabGroupRestored" defaultValue="alwaysCurrent" /> */}
@@ -39,7 +39,7 @@ export default function tabsRestore({ config, setConfig }) {
                         onChange={handleChange}
                         checked= {config.restore === "alwaysCurrent"}
                     />
-                    <label htmlFor="alwaysCurrent"><h4>Always the current window</h4></label>
+                    <label htmlFor="alwaysCurrent"><h4 data-locale="always_current_window">Always the current window</h4></label>
                 </li>    
             </ul>
         </div>

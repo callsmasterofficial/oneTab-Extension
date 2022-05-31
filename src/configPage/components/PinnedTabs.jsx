@@ -10,7 +10,7 @@ export default function PinnedTabs({config, setConfig}) {
   }
   return (
     <div className="container">
-        <h3>Pinned tabs:</h3>
+        <h3 data-locale="pinned">Pinned tabs:</h3>
         <div className="pinnedTabs options">
             <ul>
                 <li>
@@ -23,7 +23,7 @@ export default function PinnedTabs({config, setConfig}) {
                         checked ={config.pinned === "dontAddPinned"} 
                     />
                     <label htmlFor="dontAddPinned">
-                        <h4>Don't send pinned tabs to OneTab</h4>
+                        <h4 data-locale="dont_add_pinned">Don't send pinned tabs to OneTab</h4>
                     </label>
                 </li>
                 {/* <p>You can still manually send a pinned tab to OneTab by right clicking within the web page to access the OneTab menu, and then clicking 'Send only this tab to OneTab'</p> */}
@@ -37,7 +37,7 @@ export default function PinnedTabs({config, setConfig}) {
                         checked= {config.pinned === "addPinned"}
                     />
                     <label htmlFor="addPinned">
-                        <h4>Allow pinned tabs to be sent to OneTab</h4>
+                        <h4 data-locale="add_pinned">Allow pinned tabs to be sent to OneTab</h4>
                     </label>
                 </li>
                 
