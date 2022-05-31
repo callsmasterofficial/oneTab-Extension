@@ -12,7 +12,7 @@ export default function Startup({ config, setConfig}) {
   }
   return (
     <div className="container">
-        <h3>Startup:</h3>
+        <h3 data-locale="startup">Startup:</h3>
         <div className="startup options">
             <ul>
                 <li>
@@ -25,7 +25,7 @@ export default function Startup({ config, setConfig}) {
                         checked= {config.startup ==="displayOneTabAuto"} 
                     />
                     <label htmlFor="displayOneTabAuto">
-                        <h4>Display OneTab whenever you start your web browser for the first time</h4>
+                        <h4 data-locale="start_onetab_automatically">Display OneTab whenever you start your web browser for the first time</h4>
                         {/* <p>You can still manually send a pinned tab to OneTab by right clicking within the web page to access the OneTab menu, and then clicking 'Send only this tab to OneTab'</p> */}
                     </label>
                 </li>

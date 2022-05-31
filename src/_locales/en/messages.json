@@ -1,6 +1,6 @@
 {
   "name":{
-    "message":"Netflix Party"
+    "message":"OneTab"
   },
   "description": {
     "message": "Install Netflix Party Chrome extension to watch Netflix in sync with your friends"
@@ -42,7 +42,7 @@
     "message":"More..."
   },
   "share_this_tab":{
-    "message":"ssssssShare this section"
+    "message":"Share this section"
   },
   "name_this_tab":{
     "message":"Name this tab"
@@ -52,6 +52,69 @@
   },
   "star_this_tab":{
     "message":"Star this tab"
+  },
+  "unlock_this_tab":{
+    "message":"Un-lock this tab"
+  },
+  "lock_this_tab":{
+    "message":"Lock this tab"
+  },
+  "configurations":{
+    "message":"Configurations"
+  },
+  "back_to_onetab":{
+    "message":"Back to OneTab"
+  },
+  "tab_group_restore":{
+    "message":"When a tab group is restored, send the tabs to:"
+  },
+  "always_new_window":{
+    "message":"Always a new window"
+  },
+  "always_current_window":{
+    "message":"Back to OneTab"
+  },
+  "startup":{
+    "message":"Startup:"
+  },
+  "start_onetab_automatically":{
+    "message":"Display OneTab whenever you start your web browser for the first time"
+  },
+  "pinned":{
+    "message":"Pinned tabs::"
+  },
+  "dont_add_pinned":{
+    "message":"Don't send pinned tabs to OneTab:"
+  },
+  "add_pinned":{
+    "message":"Allow pinned tabs to be sent to OneTab:"
+  },
+  "restore_all_title":{
+    "message":"On clicking 'restore all' or restoring a single tab:"
+  },
+  "dont_keep_restore_list":{
+    "message":"Open the tabs and remove them from your OneTab list"
+  },
+  "dont_keep_restore_list_note":{
+    "message":"You still can press ctrl, cmd or shift to restore the tab(s) without removing them from OneTab. If you set any of your tab groups as 'locked' then the tabs will not be removed from OneTab unless you unlock that tab group first."
+  },
+  "keep_restore_list":{
+    "message":"Keep them in your OneTab list"
+  },
+  "keep_restore_list_note":{
+    "message":"You can manually delete entries by hovering over them and clicking the X icon, or by clicking the 'delete all' button"
+  },
+  "duplicates_title":{
+    "message":"Duplicates:"
+  },
+  "allow_duplicates":{
+    "message":"Allow duplicates:"
+  },
+  "reject_duplicates":{
+    "message":"Silently reject duplicates:"
+  },
+  "reject_duplicates_note":{
+    "message":"If OneTab already contains the URL of a tab, it will not be added again. This only applies when you click the OneTab icon"
   }
   
 }

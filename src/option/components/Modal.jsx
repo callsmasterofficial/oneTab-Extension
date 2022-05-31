@@ -63,7 +63,8 @@ export default function Modal(props) {
         )}
       </button>
       <button onClick={handleLock}>
-        {props.section.isLocked ? "Un-lock this tab" : "Lock this tab"}
+        {props.section.isLocked ? <span data-locale="unlock_this_tab">Un-lock this tab</span> : 
+        <span data-locale="lock_this_tab">Lock this tab</span>}
       </button>
 
       {/* <button onClick={handleHelp}>Help</button> */}

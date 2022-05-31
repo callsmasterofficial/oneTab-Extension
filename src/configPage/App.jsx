@@ -5,6 +5,7 @@ import Startup from "./components/Startup";
 import RestoreTab from "./components/RestoreTab";
 import Duplicates from "./components/Duplicates";
 import Back from "../icons/Back"
+import localizeHtmlPage from "../functions/localizeHtmlPage";
 
 function App() {
   const [config, setConfig] = useState({});
@@ -14,6 +15,7 @@ function App() {
         setConfig(JSON.parse(result.oneTabConfig));
       }
     });
+    localizeHtmlPage();
   }, []);
 
   useEffect(() => {
@@ -40,9 +42,9 @@ function App() {
           src={chrome.runtime.getURL("img/Onetab_logo_White.svg")}
           alt="OneTab logo"
         />
-        <h1>Configurations</h1>
+        <h1 data-locale="configurations">Configurations</h1>
         <div>
-          <button className="backBtn" onClick={handleBackToExtension}><Back /> Back to OneTab</button>
+          <button  className="backBtn" onClick={handleBackToExtension}><Back /> <span data-locale="back_to_onetab">Back to OneTab</span></button>
         </div>
       </div>
 
